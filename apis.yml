@@ -1,7 +1,26 @@
 aid: brimstone
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brimstone.png
 name: Brimstone
-description: Brimstone is a company surfaced as a portfolio company of dcvc, fifth-wall and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Brimstone is a materials technology company decarbonizing heavy industry through
+  a single-rock co-production process it calls the Rock Refinery. From ordinary calcium silicate
+  rock it extracts multiple high-value materials at once - carbon-negative Portland cement and
+  supplementary cementitious materials, alumina and aluminum, magnesium, titanium, iron/steel
+  feedstock and critical minerals - aiming to use 100% of the feed rock and eliminate tailings
+  while cutting process emissions. The company uses commercially available equipment for a
+  low-cost, market-ready approach, and has secured commitments including Amazon as a buyer of
+  low-carbon cement from its first commercial plant. Brimstone is a private heavy-industry /
+  climate-tech company backed by DCVC and Fifth Wall; it operates no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/brimstone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Climate Tech
+- Materials
+- Cement
+- Decarbonization
+- Critical Minerals
+- Manufacturing
+- Heavy Industry
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/brimstone-domain-security.yml
 - type: Website
   url: https://www.brimstone.com/
+- type: Blog
+  url: https://www.brimstone.com/media
+- type: PrivacyPolicy
+  url: https://www.brimstone.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
